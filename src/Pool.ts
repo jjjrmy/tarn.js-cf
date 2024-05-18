@@ -1,8 +1,8 @@
 import { PendingOperation } from './PendingOperation';
 import { Resource } from './Resource';
 import { checkOptionalTime, delay, duration, now, reflect, tryPromise } from './utils';
-import { EventEmitter } from 'events';
-import { clearInterval } from 'timers';
+import { EventEmitter } from 'node:events';
+import { clearInterval } from 'node:timers';
 
 export interface PoolOptions<T> {
   create: CallbackOrPromise<T>;
